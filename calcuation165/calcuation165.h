@@ -10,12 +10,12 @@ namespace Ui {
 
 class calcuation165 : public QMainWindow
 {
-    Q_OBJECT
+	Q_OBJECT
 
 
 public:
-    calcuation165(QWidget *parent = nullptr);
-    ~calcuation165();
+	calcuation165(QWidget* parent = nullptr);
+	~calcuation165();
 	void on_pushButton_0_clicked();
 	void on_pushButton_1_clicked();
 	void on_pushButton_2_clicked();
@@ -41,11 +41,10 @@ public:
 	// 사용 함수 구현
 	void on_pushButton_clicked_number(QString number);
 	void on_pushButton_clicked_operator(int oper);
-	//QString calc_lineEdit(QString left_val, int sign, QString right_val);
-	int num1, num2, result;
+
 private:
 
-    Ui::calcuation165Class ui;
+	Ui::calcuation165Class ui;
 	int current_op;
 	int prev_op;
 	bool flag_operator;
